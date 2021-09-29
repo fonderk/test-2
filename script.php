@@ -44,10 +44,10 @@ $mail->SMTPSecure = 'tls';
 $mail->SMTPAuth = true;
 
 //Username to use for SMTP authentication - use full email address for gmail
-$mail->Username = "testacc22849@gmail.com";
+$mail->Username = "email";
 
 //Password to use for SMTP authentication
-$mail->Password = "Ns7htP4i";
+$mail->Password = "pass";
 
 //Set who the message is to be sent from
 $mail->setFrom($_POST['email'], $_POST['name']);
@@ -56,7 +56,7 @@ $mail->setFrom($_POST['email'], $_POST['name']);
 $mail->addReplyTo('replyto@example.com', 'First Last');
 
 //Set who the message is to be sent to
-$mail->addAddress('testacc22849@mail.ru', 'test acc');
+$mail->addAddress('email', 'test acc');
 
 //Set the subject line
 $mail->Subject = 'Заявка на услугу';
