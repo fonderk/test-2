@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="UTF-8">
+		<script src="https://unpkg.com/cookielib/src/cookie.js"></script>
+		<title>Форма обращения в сервисный центр</title>
+	</head>
+	<body>
+		<form action="script.php" method="post">
+			 <p>Имя: <input type="text" name="name" /></p>
+			 <p>Номер телефона: <input type="text" name="phonenumber" /></p>
+			 <p>Email: <input type="text" name="email" /></p>
+			 <p>Город: <input type="text" name="city" /></p>
+			 <p>Услуга</p>
+				 <select name="taskOption">
+				  <option>Диагностика</option>
+				  <option>Ремонт</option>
+				</select>
+			<p>Комментарий: <input type="text" name="comment" /></p>
+			<input type="hidden" name="ip" value="US">
+			<p><input type="submit" /></p>
+		</form>
+		<script>
+		setCookie('utm_source','google');
+		setCookie('utm_medium','cpc');
+		setCookie('utm_campaign','{network}');
+		setCookie('utm_content','{creative}');
+		setCookie('utm_term','{keyword}');
+		</script>
+	<body>
+</html>	
